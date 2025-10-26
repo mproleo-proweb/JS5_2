@@ -10,7 +10,7 @@ for (let i = 1; i <= count; i++) {
     let num1 = RandomNum();
     let num2 = RandomNum();
 
-    let sign = signs[Math.round(Math.random() * signs.length)];
+    let sign = signs[Math.floor(Math.random() * signs.length)];
 
     if (sign === '/' && num2 === 0) {
         num2 = 1;
